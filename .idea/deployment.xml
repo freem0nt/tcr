@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="TCR" persistUploadOnCheckin="false">
+    <serverData>
+      <paths name="TCR">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/thomascomputerrepair" local="$PROJECT_DIR$" web="/thomascomputerrepair" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/public_html/thomascomputerrepair/downloads" />
+            <excludedPath local="true" path="$PROJECT_DIR$/downloads" />
+            <excludedPath local="true" path="$PROJECT_DIR$/downloads" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

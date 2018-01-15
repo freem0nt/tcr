@@ -1,0 +1,13 @@
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+<Files "coupon_codes.txt">
+deny from all 
+</Files>
+
+deny from 66.219.17.218
+deny from 108.62.
+

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /mail
+Disallow: /classmates
+Disallow: /photos
+Disallow: /pumc
+Disallow: /cgi-bin

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "TCR",
+    "host": "thomascomputerrepair.com",
+    "port": 21,
+    "type": "ftp",
+    "username": "freemont",
+    "password": "P0wer9She||",
+    "path": "/public_html/thomascomputerrepair"
+  }
+]

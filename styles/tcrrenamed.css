@@ -1,0 +1,518 @@
+/* Much thanks and credit to Eric Meyer for much of this design.
+    http://meyerweb.com/eric/css/edge/complexspiral
+         color scheme redone 20130531 */
+
+/*Color scheme */
+/*  #b6dff1	<< lighter
+ *  #9cbfcf
+ *  #336179
+ *  #132f32
+ *  #090d0c	<< darker
+*/
+/* Additional colors */
+/*  #d7b8bc	testimonials highlight
+*   #cfb89c	link hover
+*   #62b2d7	link
+*/
+
+/* Initialize */
+@font-face {
+    font-family: lpt_text;
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: lpt_heading;
+    src: url(../fonts/Vanib.ttf);
+}
+
+@font-face {
+    font-family: lpt_cursive;
+    src: url(../fonts/segoesc.ttf);
+}
+
+@font-face {
+    font-family: lpt_joker;
+    src: url(../fonts/indigo.ttf);
+}
+
+@media all and (max-width: 767px) {
+    .col3 {
+        display: none;
+    }
+}
+
+body {
+    background: #090d0c;
+    color: #b6dff1;
+    margin: 0;
+    padding: 0;
+    font-family: lpt_text, sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    max-width: 100em;
+    min-width: 50em;
+}
+
+p {
+    font-size: 1em;
+    /*letter-spacing:.25px;*/
+}
+
+h1 {
+    margin: -9px -9px 0.5em;
+    padding: 15px 0 5px;
+    text-align: right;
+    background: #9cbfcf;
+    color: #024;
+    letter-spacing: 0.5em;
+    text-transform: lowercase;
+    font: bold 28px lpt_text, sans-serif;
+    height: 36px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-shadow: 1.5px 1.5px 1.5px #132f32;
+}
+
+h2, h3, h4 {
+    font-family: lpt_heading, serif;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+}
+
+h3 {
+    color: #ffc;
+}
+
+.indigo {
+    font: 2em lpt_joker;
+}
+
+ul {
+    list-style-image: url('../images/mouse.png');
+    text-align: left;
+}
+
+.alternate li:nth-child(even) {
+    color: #3abbf2;
+}
+
+.ie10 dt {
+    display: table-row; /* M$ STILL cannot make a browser that works. */
+}
+
+.ie10 dt .button {
+    display: none; /* Because they won't float. Jesus H Christ. */
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 0.66em;
+}
+
+dt .button {
+    border: none;
+    float: right;
+    margin-top: .4em;
+    margin-left: .4em;
+}
+
+hr {
+    width: 30%;
+    color: #090d0c;
+}
+
+img {
+    border: none;
+}
+
+code, pre {
+    color: #edc;
+    display: block;
+    font-size: 110%;
+    font-family: "Andale Mono", monospace;
+    padding: 10px;
+}
+
+.helptext {
+    font-size: .75em;
+    font-style: italic;
+    text-align: center;
+}
+
+.float_right {
+    float: right;
+    margin-left: 20px;
+    border: 1px solid #f0f8ff;
+}
+
+/*Blockquotes */
+blockquote {
+    font-style: italic;
+    text-indent: 2em;
+    padding: 0 10px 6px 18px;
+    margin: 0 26px 10px 0px;
+    background: url(../images/quote_new.png) 0 0 no-repeat;
+}
+
+blockquote span {
+    font-size: 1.25em;
+    color: #d7b8bc
+}
+
+blockquote.testimonial {
+    max-width: 50em;
+    text-align: justify;
+    clear: right;
+    background: none;
+    border-left: 4px solid #336179;
+    border-top: 1px solid #336179;
+}
+
+blockquote.testimonial.right {
+    max-width: 50em;
+    float: right;
+    border-left: none;
+    padding-right: 18px;
+    border-right: 4px solid #336179;
+}
+
+blockquote.testimonial.right .sig {
+    text-align: right;
+}
+
+blockquote.testimonial p:before {
+    content: open-quote;
+}
+
+blockquote.testimonial p:after {
+    content: close-quote;
+}
+
+blockquote .sig, .sig {
+    font-family: lpt_cursive, cursive;
+    text-indent: 0;
+}
+
+blockquote.testimonial .sig:before {
+    content: no-open-quote;
+}
+
+blockquote.testimonial .sig:after {
+    content: no-close-quote;
+}
+
+.anchor, #cse-search-box, .ads {
+    text-align: center;
+}
+
+.anchor img {
+    border: 0;
+}
+
+.tooltip {
+    cursor: help;
+    border-bottom: 1px dashed #eee;
+}
+
+/* Main content */
+div#content {
+    background-color: #132f32;
+    position: absolute;
+    top: 26px;
+    left: 161px;
+    right: 25px;
+    padding: 10px;
+    border: 3px solid #336179;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+div#wrapper {
+    margin: 0 5%;
+    border: none
+}
+
+div#content p {
+    /*margin: 0 1em 1em;*/
+}
+
+div#content h3 {
+    margin-bottom: 0.5em;
+}
+
+div#content a:link {
+    color: #62b2d7;
+}
+
+div#content a:visited {
+    color: #62b2d7;
+}
+
+div#content a:link:hover {
+    color: #cfb89c;
+    text-decoration: none;
+}
+
+div#content a:visited:hover {
+    color: #cfb89c;
+}
+
+/* Navigation */
+div#nav {
+    position: fixed;
+    top: 26px;
+    left: 0;
+    width: 160px;
+    height: 700px;
+    font: 16px lpt_text, sans-serif;
+}
+
+div#nav a {
+    background-color: #090d0c;
+    display: block;
+    text-align: center;
+    font: bold 18px lpt_text, sans-serif;
+    padding: 5px 10px;
+    margin: 0 -2px 2px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: #ffc;
+    transition: background-color .5s linear;
+    -webkit-transition: background-color .5s linear;
+}
+
+div#nav a:hover {
+    /*color: #336179;*/
+    border-top: 2px solid #336179;
+    border-bottom: 2px solid #336179;
+    background-color: #235E6F;
+
+}
+
+/* The popups under the navigation */
+/*div#nav a span {display:none;}
+div#nav a:hover span {
+    display: block;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 125px;
+    padding: 5px;
+    margin: 10px;
+    z-index: 100;
+    color: #b6dff1;
+    background: transparent;
+    font: .8em lpt_text, sans-serif;
+    text-align: center;
+}*/
+/* 3 column articles */
+.col_3 {
+    columns: 3 20em;
+    -moz-columns: 3 20em;
+    -webkit-columns: 3 20em;
+    column-gap: 2em;
+    -moz-column-gap: 2em;
+    -webkit-column-gap: 2em;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px dotted #336179;
+}
+
+.col_3 h3 {
+    column-span: all;
+    -webkit-column-span: all;
+}
+
+/* Table for phone numbers -
+using a table eliminated annoying
+IE wierdness with lists and indentation. */
+.numbers {
+    border: 1px solid #f0f8ff;
+    background-color: #090d0c;
+    padding: 3px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.numbers td {
+    font-size: 1.2em;
+}
+
+/* credit cards */
+.cards {
+    border: 3px double #0c151f;
+    background-color: #fff;
+    padding: 3px;
+    margin: auto;
+    box-shadow: 10px 10px 10px #000;
+    clear: right;
+}
+
+/* divs on websites.php */
+/*Had to add this float to stop IE6
+from positioning the content of
+websites.php under the navigation */
+.sites {
+    float: left;
+}
+
+.sites img {
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 2px solid #f0f8ff;
+    padding: 4px;
+}
+
+.sites h4 > a {
+    text-decoration: none;
+}
+
+/* Hours Table */
+#hours {
+    width: 100%;
+    max-width: 60em;
+    margin: 1em auto;
+    padding: 5px;
+    border: 1px solid #f0f8ff;
+    border-radius: 10px;
+    color: #9cbfcf;
+    background-color: #090d0c;
+}
+
+#certifications {
+    /*float:right;*/
+    /*width:100px;*/
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#certifications img {
+    border: 2px solid #fff;
+    padding: 2px;
+    float: left;
+}
+
+#certifications img.tia {
+    background-color: #ee2d24;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 auto 5px auto;
+    color: #9cbfcf;
+    letter-spacing: 1px;
+}
+
+/* Contact forms */
+fieldset {
+    border: 2px solid #090d0c;
+    border-radius: 25px;
+    background-color: #0e2224;
+}
+
+input.btn {
+    color: #b6dff1;
+    background-color: #090d0c;
+    border: 2px outset #336179;
+    height: 3em;
+    font-weight: bold;
+}
+
+input:focus {
+    background-color: #ff0;
+}
+
+/* Facebook */
+.fb_outer {
+    margin: 15px 0 15px 15px;
+    width: 287px;
+    height: 596px;
+    float: right;
+    overflow: hidden;
+    border: 2px solid #090d0c;
+}
+
+.fb_inner {
+    margin: -2px 0 0 -2px;
+}
+
+.fb-comments {
+    /*min-width: 800px;  */
+}
+
+/* FAQ styles, idea from http://www.steveeray.com/archives/000036.cfm */
+.question {
+    margin-top: 0;
+    text-indent: 2em;
+}
+
+.answer {
+    margin-top: 0;
+    text-indent: 2em;
+}
+
+.question span {
+    font-weight: bold;
+    padding: .2em .5em .2em .2em;
+    font-size: 150%;
+    color: #b00000;
+}
+
+.answer span {
+    font-weight: bold;
+    padding: 0 .5em 0 .2em;
+    font-size: 150%;
+    color: #008000;
+}
+
+/* PayPal */
+.paypal {
+    /*float:left;*/
+    border: none;
+    padding: 3px;
+    margin: 14px auto 0 auto;
+    text-align: center;
+}
+
+.paypal img {
+    padding: 1em 0;
+}
+
+#coupon {
+    height: 16cm;
+    width: 16.5cm;
+    border: 5px double #000;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+}
+
+#coupon p.coupon_code {
+    font: bold xx-large sans-serif;
+    margin: 100px auto 0 auto;
+    border: 10px double #fff;
+    color: #fff;
+    background: #000;
+    width: 10cm;
+}
+
+/* footer at bottom of each page */
+address {
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-size: .85em;
+    font-style: normal;
+    padding: 10px 0;
+    border-top: 1px solid #ace;
+    color: #b6dff1;
+    clear: both;
+}
